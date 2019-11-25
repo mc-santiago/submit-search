@@ -74,9 +74,10 @@ if(isset($_POST['submit'])) {
     <main class="container grey-text">
         <!-- FORMULARIO PARA INTROCUDIR PELICULA -->
         <h4 class="center indigo-text">Formulario</h4>
+        <p class="center">Con este formulario podrás añadir películas a la base de datos.</p>
         <form name="formulario" action="formulario.php" onsubmit="return validateForm()" method="POST" class="white">
             <!-- Titulo -->
-            <label>Titulo: </label>
+            <label>Título: </label>
             <input type="text" name="titulo" value="<?php echo htmlspecialchars($titulo) ?>">
             <!-- Director -->  
             <label>Director: </label>
@@ -87,16 +88,15 @@ if(isset($_POST['submit'])) {
             <div class="red-text"><?php echo $errors['anio']; ?></div>
             <input type="text" name="anio" value="<?php echo htmlspecialchars($anio) ?>">
             <!-- Pais -->
-            <label>Pais: </label>
+            <label>País: </label>
             <div class="red-text"><?php echo $errors['pais']; ?></div>
             <select name="pais" class="browser-default" placeholder="Escoger un País">
                 <option disabled selected value> -- escoger un país -- </option>
                 <?php foreach($paises as $key => $pais){ ?>
                     <option value="<?php echo $key; ?>"><?php echo $pais; ?></option>
                 <?php } ?>
-            <div class="center">
-                <input type="submit" name="submit" value="submit" class="btn indigo lighten-2 white-text submitButton"> 
-            </div>
+            <!-- Boton -->
+            <input type="submit" name="submit" value="submit" class="btn indigo lighten-2 white-text submitButton"> 
         </form>
     </main>
 

@@ -31,6 +31,9 @@
 
         .submitButton {
             margin-top: 20px;
+            position: relative;
+            left: 50%;
+            margin-left: -50px;
         }
     </style>   
 </head>
