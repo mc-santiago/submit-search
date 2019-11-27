@@ -46,6 +46,7 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="formulario.php" class="btn white black-text">Formulario</a></li>
                     <li><a href="busqueda.php" class="btn white black-text">Búsqueda</a></li>
+                    <li><a href="listado.php" class="btn white black-text">Listado</a></li>
                 </ul>
             </div>
         </nav>
